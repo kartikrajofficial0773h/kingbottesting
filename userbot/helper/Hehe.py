@@ -1,1 +1,0 @@
-#legandu aja be 
