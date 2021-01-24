@@ -1,6 +1,6 @@
 # Thanks to Sipak bro and Aryan.. 
 # animation Idea by @ItzSipak && @Hell boy_pikachu
-# Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
+# codes by @hellboi_atul ....and thanks to @kartikrajofficial...
 # Kang with credits else gay...
 import asyncio
 import os
@@ -18,18 +18,18 @@ from telethon.tl.types import ChannelParticipantsAdmins
 # 🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔🤔
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "KINGBOT"
 
-# Thanks to Sipak bro and Aryan.. 
-# animation Idea by @ItzSipak && @Hell boy_pikachu
-# Made by @hellboi_atul ....and thanks to @Crackexy for the logos...
+# Thanks to Kartik and Srinivas bro
+# Awesome KINGBOT   
+# credits...
 # Kang with credits else gay...
-# alive.py for DC(DARK COBRA)
+# alive.py for DC(KingBOT)
 global ghanti
 ghanti = borg.uid
 edit_time = 5
 """ =======================CONSTANTS====================== """
 file1 = "https://telegra.ph/file/5bba42dacd463db433053.jpg"
 file2 = "https://telegra.ph/file/a47953a5ee354aff8b5ab.jpg"
-file3 = "https://telegra.ph/file/1c2fe5686f09ec3da1981.png"
+file3 = "https://telegra.ph/file/d03bc0122679ab902aee2.mp4"
 file4 = "https://telegra.ph/file/5bba42dacd463db433053.jpg"
 """ =======================CONSTANTS====================== """
 
