@@ -44,8 +44,8 @@
     },
     "PMPERMIT_PIC": {
       "description": "put here any telegraph media link for custom pmpermit pic.",
-      "value": "",
-      "required": true
+      "value": "https://telegra.ph/file/a47953a5ee354aff8b5ab.jpg",
+      "required": false
     },
     "CUSTOM_PMPERMIT": {
       "description": "Enter Your custom pm permit msg.",
@@ -97,7 +97,7 @@
        "value": ""
     }, 
     "STRING_SESSION": {
-      "description": "Enter here your new sring session old string not work ",
+      "description": "Enter here your new sring session old string not work  ",
       "value": ""
     },
     "HEROKU_API_KEY": {
