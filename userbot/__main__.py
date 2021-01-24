@@ -1,21 +1,21 @@
-import os
-from pathlib import Path
-from sys import argv
-
-import telethon.utils
-from telethon import TelegramClient
-
 from userbot import bot
-from userbot.utils import load_module, start_assistant
+from sys import argv
+import sys
+from telethon.errors.rpcerrorlist import PhoneNumberInvalidError
+import os
+from telethon import TelegramClient
 from var import Var
-
-LOAD_USERBOT = os.environ.get("LOAD_USERBOT", True)
-LOAD_ASSISTANT = os.environ.get("LOAD_ASSISTANT", True)    
+from userbot.utils import load_module
+from userbot import LOAD_PLUG, BOTLOG_CHATID, LOGS
+from pathlib import Path
+import asyncio
+import telethon.utils
 
 async def add_bot(bot_token):
     await bot.start(bot_token)
-    bot.me = await bot.get_me()
+    bot.me = await bot.get_me() 
     bot.uid = telethon.utils.get_peer_id(bot.me)
+
 
 
 if len(argv) not in (1, 3, 4):
@@ -26,43 +26,34 @@ else:
         print("Initiating Inline Bot")
         # ForTheGreatrerGood of beautification
         bot.tgbot = TelegramClient(
-            "TG_BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
+            "TG_BOT_TOKEN",
+            api_id=Var.APP_ID,
+            api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
-        print("Initialised Sucessfully")
-        print("Starting Dark AI")
+        print("Initialisation finished with no errors")
+        print("Starting Userbot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
         bot.start()
-
+    
 
 import glob
+path = 'userbot/plugins/*.py'
+files = glob.glob(path)
+for name in files:
+    with open(name) as f:
+        path1 = Path(f.name)
+        shortname = path1.stem
+        load_module(shortname.replace(".py", ""))
 
-if LOAD_USERBOT == True:
-    path = "userbot/plugins/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as f:
-            path1 = Path(f.name)
-            shortname = path1.stem
-            load_module(shortname.replace(".py", ""))
-else:
-    print("Userbot is Not Loading As U Have Disabled")
+import userbot._core
 
-if LOAD_ASSISTANT == True:
-    path = "userbot/plugins/assistant/*.py"
-    files = glob.glob(path)
-    for name in files:
-        with open(name) as f:
-            path1 = Path(f.name)
-            shortname = path1.stem
-            start_assistant(shortname.replace(".py", ""))
-else:
-    print("Assitant is Not Loading As U Have Disabled")
-
-print("KINGBOT userbot AND YOUR ASSISTANT is Active Enjoy Join @King_bot_official For Updates.")
+print("Aree Your KingBot is builded successfully!! U pro 😁😉 Join @king_bot_officialchat for any help and suuport...")
 
 if len(argv) not in (1, 3, 4):
     bot.disconnect()
 else:
     bot.run_until_disconnected()
+
+
