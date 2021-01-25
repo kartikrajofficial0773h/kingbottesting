@@ -39,7 +39,7 @@ else:
     
 
 import glob
-path = 'userbot/plugin/*.py'
+path = 'userbot/plugins/*.py'
 files = glob.glob(path)
 for name in files:
     with open(name) as f:
