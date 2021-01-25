@@ -43,16 +43,17 @@ async def hmm(yes):
     ghanti = borg.uid
     await yes.delete()
     uptime = await dcdef.get_readable_time((time.time() - Lastupdate))
-    pm_caption = "** 😎KINGBOT IS ALWAYS ACTIVE!!😎**\n\n"
+    pm_caption = "** 👑KINGBOT IS ALWAYS ACTIVE!!👑**\n\n"
     pm_caption += "**This is my master special userbot!\n\n"
     pm_caption += "Status of my bot!!\n\n"
-    pm_caption += f"➾ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** ☞ {version.__version__}\n"
-    pm_caption += "➾ **KINGBOT version** ☞ 3.8.3\n"
-    pm_caption += "➾ **PYTHON** ☞ 3.8.3\n"
-    pm_caption += "➾ **Bot status**  ☞ FULL ACESS\n"
-    pm_caption += "➾ **More info** ☞ [click here](https://t.me/King_bot_official)\n\n"
-    pm_caption += f"➾ **KingBot ᴜᴘᴛɪᴍᴇ** ☞ {uptime}\n\n"
-    pm_caption += f"➾ **My pro owner** ☞ [{DEFAULTUSER}](tg://user?id={ghanti})\n"
+    pm_caption += f"🎉 **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀꜱɪᴏɴ** 👉 {version.__version__}\n"
+    pm_caption += "👑 **KINGBOT version** 👉 3.8.3\n"
+    pm_caption += "🥇 **PYTHON** 👉 3.8.3\n"
+    pm_caption += "➾ **A.I.** 👉 Fully updated\n"
+    pm_caption += "😎 **Bot Token**  👉 FULL ACESS\n"
+    pm_caption += "🤓 **More info** 👉 [click here](https://t.me/King_bot_official)\n\n"
+    pm_caption += f"➾ **KingBot ᴜᴘᴛɪᴍᴇ** 👉 {uptime}\n\n"
+    pm_caption += f"👑  **My pro owner** 👉 [{DEFAULTUSER}](tg://user?id={ghanti})\n"
     on = await borg.send_file(yes.chat_id, file=file1,caption=pm_caption)
 
     await asyncio.sleep(edit_time)
