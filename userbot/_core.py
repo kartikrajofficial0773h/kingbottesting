@@ -1,4 +1,3 @@
- -1,115 +0,0 @@
 import asyncio
 import os
 from datetime import datetime
