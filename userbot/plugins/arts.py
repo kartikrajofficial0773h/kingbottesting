@@ -1,6 +1,5 @@
 from userbot import ALIVE_NAME, CMD_HELP
 from userbot.utils import admin_cmd, edit_or_reply, sudo_cmd
-from userbot.cmdhelp import CmdHelp
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Hell User"
 
@@ -558,52 +557,3 @@ async def bluedevilshitos(shitos):
 @bot.on(sudo_cmd(pattern="dislike$", allow_sudo=True))
 async def bluedevildislike(dislike):
     await edit_or_reply(dislike, T)
-
-
-CmdHelp("arts").add_command(
-  'elove', None, 'Use and see'
-).add_command(
-  'monster', None, 'Use and see'
-).add_command(
-  'pig', None, 'Use and see'
-).add_command(
-  'gun', None, 'Use and see'
-).add_command(
-  'dog', None, 'Use and see'
-).add_command(
-  'hello', None, 'Use and see'
-).add_command(
-  'hmf', None, 'Use and see'
-).add_command(
-  'couple', None, 'Use and see'
-).add_command(
-  'sup', None, 'Use and see'
-).add_command(
-  'india', None, 'Use and see'
-).add_command(
-  'wc', None, 'Use and see'
-).add_command(
-  'snk', None, 'Use and see'
-).add_command(
-  'bye', None, 'Use and see'
-).add_command(
-  'shitos', None, 'Use and see'
-).add_command(
-  'dislike', None, 'Use and see'
-).add_command(
-  'carry', '<text>', 'send your text with carry art'
-).add_command(
-  'ded', '<text>', 'Hang yourself'
-).add_command(
-  'sthink', '<text>', 'Send your text in thinking art'
-).add_command(
-  'sfrog', '<text>', 'Send your text in frog art'
-).add_command(
-  'sdead', '<text>', 'Send your text in dear frog art'
-).add_command(
-  'strump', '<text>', 'Send your text in trump art'
-).add_command(
-  'china', '<text>', 'Send your text in china art'
-).add_command(
-  'sshit', None, 'Send a art in "Ahh shit. Here we go again"'
-).add()
