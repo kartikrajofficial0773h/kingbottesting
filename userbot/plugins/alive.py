@@ -51,6 +51,7 @@ async def hmm(yes):
     pm_caption += "🥇 **PYTHON** 👉 3.8.3\n"
     pm_caption += "➾ **A.I.** 👉 Fully updated\n"
     pm_caption += "😎 **Bot Token**  👉 FULL ACESS\n"
+    pm_caption += "🇮🇳 **Heroku:**  👉 connected\n"
     pm_caption += "🤓 **More info** 👉 [click here](https://t.me/King_bot_official)\n\n"
     pm_caption += f"➾ **KingBot ᴜᴘᴛɪᴍᴇ** 👉 {uptime}\n\n"
     pm_caption += f"👑  **My pro owner** 👉 [{DEFAULTUSER}](tg://user?id={ghanti})\n"
